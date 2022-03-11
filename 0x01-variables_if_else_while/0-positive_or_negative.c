@@ -3,8 +3,10 @@
 #include <stdio.h>
 
 /**
- * This code will genrate three outputs
- * depending on the random number generated
+ * main - main block
+ * Description: Get a random number and print the number
+ * and if it is positive, negative, or zero
+ * Return: 0
  */
 
 int main(void)
