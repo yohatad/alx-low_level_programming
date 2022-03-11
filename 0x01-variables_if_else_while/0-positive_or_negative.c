@@ -2,6 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 
+/** 
+ * This code will genrate three outputs 
+ * depending on the random number generated
+ * 
+ */
+
 int main(void)
 {
 	int n;
@@ -16,7 +22,7 @@ int main(void)
     }
 
     else {
-        printf("%i is zero \n",n);
+        printf("%i is zero\n",n);
     }
     return (0);
 }
