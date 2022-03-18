@@ -1,12 +1,13 @@
 #include "main.h"
-
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * mul - returns the product of its parameters
+ * @a: int type number
+ * @b: int type number
+ * Return:0
  */
-int main(void)
+
+
+int mul(int a, int b)
 {
-    print_numbers();
-    return (0);
+return (a * b);
 }
