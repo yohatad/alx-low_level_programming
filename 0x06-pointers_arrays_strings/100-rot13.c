@@ -1,25 +1,27 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * leet - transform to leet
- * @s: char array string type
- * Return: s transformed
+ * rot13 - encoder rot13
+ * @s: pointer to string params
+ *
+ * Return: *s
  */
 
-char *leet(char *s)
+char *rot13(char *s)
 {
-	int i, ii;
-	char s1[] = "aeotl";
-	char S1[] = "AEOTL";
-	char s2[] = "43071";
+	int i;
+	int j;
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (ii = 0; ii < 5; ii++)
+		for (j = 0; j < 52; j++)
 		{
-			if (s[i] == s1[ii] || s[i] == S1[ii])
+			if (s[i] == data1[j])
 			{
-				s[i] = s2[ii];
+				s[i] = datarot[j];
 				break;
 			}
 		}
